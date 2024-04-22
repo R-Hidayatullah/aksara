@@ -1,0 +1,83 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    /* Default text color for light mode */
+    background-color: #ffffff;
+    /* Default background color for light mode */
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.conversion-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d8d8d8;
+    /* Inherited from body for light mode */
+    border-radius: 5px;
+    padding: 20px;
+    transition: background-color 0.5s ease;
+}
+
+#latin-text {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    resize: vertical;
+}
+
+#convert-btn {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+/* CSS for the Javanese text output */
+#javanese-text {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    resize: vertical;
+}
+
+.dark-mode-toggle {
+    margin-top: 10px;
+}
+
+/* Dark mode styles */
+body.dark {
+    color: #fff;
+    /* Text color for dark mode */
+    background-color: #333;
+    /* Background color for dark mode */
+}
+
+.conversion-box.dark {
+    background-color: #555;
+    /* Adjust for desired dark background shade */
+}
